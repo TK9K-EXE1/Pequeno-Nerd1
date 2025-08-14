@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pequeno Nerd — Survivor</title>
+
+  <!-- Google Fonts (estilo “desenhado”) -->
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background decor -->
+  <div class="bg-layer parallax" data-depth="0.1"></div>
+  <div class="bg-noise"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 16.8 6.5 19.2l1-6.2L3 8.6l6.2-.9L12 2z" />
+      </svg>
+      <span>Pequeno Nerd</span>
+    </div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#mundo">Mundo</a>
+      <a href="#contato" class="btn">Entrar na Guilda</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="scribbles">
+        <!-- Rabisco circular -->
+        <svg class="scribble ring parallax" data-depth="0.35" viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M20,100 C120,10 480,10 580,100 C480,190 120,190 20,100 Z" />
+        </svg>
+        <!-- Rabisco NERD -->
+        <svg class="scribble nerd parallax" data-depth="0.25" viewBox="0 0 1200 300" aria-hidden="true">
+          <path d="M80,260 L120,40 L200,260 M300,260 L300,40 L460,260 M560,260 L560,40 L740,260 M840,260 L860,40 L1080,260" />
+        </svg>
+      </div>
+
+      <div class="title-wrap">
+        <h1 class="title">
+          <span class="word word-1">PEQUENO</span>
+          <span class="word word-2">NERD</span>
+        </h1>
+
+        <div class="tag parallax" data-depth="0.5">
+          <span class="pin" aria-hidden="true">📎</span>
+          <span class="label">Survivor</span>
+        </div>
+
+        <p class="subtitle">Explorando mundos bugados, puzzles e glitch-art.</p>
+
+        <div class="cta">
+          <a href="#mundo" class="btn btn-ghost">Explorar</a>
+          <a href="#contato" class="btn btn-solid">Juntar-se</a>
+        </div>
+      </div>
+
+      <!-- Silhueta/ilustração (opcional): use PNG com fundo transparente -->
+      <img class="hero-figure parallax" data-depth="0.4" src="assets/character.png" alt="Explorador aventureiro" />
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="panel">
+      <h2 class="panel-title">Sobre a Jornada</h2>
+      <p class="panel-text">
+        Um garoto esperto, um mundo em colapso e um inventário improvisado. Cada decisão
+        abre uma linha do tempo paralela. Sobreviva com criatividade, resolva puzzles
+        temporais e abrace os glitches.
+      </p>
+    </section>
+
+    <!-- MUNDO -->
+    <section id="mundo" class="cards">
+      <article class="card">
+        <h3>Floresta Azul</h3>
+        <p>Neblina fria, árvores gigantes e sinais de código antigo nos troncos.</p>
+      </article>
+      <article class="card">
+        <h3>Cidade Quebrada</h3>
+        <p>Ruínas neon e bugs que viram plataformas. Risco alto, loot melhor.</p>
+      </article>
+      <article class="card">
+        <h3>Arena Glitch</h3>
+        <p>Desafios semanais com regras… instáveis. Domine o timing.</p>
+      </article>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="panel contact">
+      <h2 class="panel-title">Entre para a Guilda</h2>
+      <form class="contact-form" autocomplete="off">
+        <input type="text" name="nome" placeholder="Seu nome de aventureiro" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <button class="btn btn-solid" type="submit">Partiu!</button>
+        <small class="form-msg" role="status" aria-live="polite"></small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2025 Pequeno Nerd</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
